@@ -172,11 +172,11 @@ export default function Curve(props) {
   return (
     <div style={{ position: "relative", width: props.width, height: props.height }}>
       <canvas style={{ position: "absolute", left: 0, top: 0 }} ref={ref} width={props.width} height={props.height} />
-      <div style={{ position: "absolute", left: "20%", bottom: -20 }}>-- ETH Reserve --></div>
+      <div style={{ position: "absolute", left: "20%", bottom: -20 }}>——— ETH Reserve ———→</div>
       <div
         style={{ position: "absolute", left: -20, bottom: "20%", transform: "rotate(-90deg)", transformOrigin: "0 0" }}
       >
-        -- Token Reserve -->
+        ——— Token Reserve ———→
       </div>
     </div>
   );
