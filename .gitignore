@@ -48,10 +48,12 @@ build
 # Hardhat files
 cache
 artifacts
+hardhat.config.js
 
 # misc
 .DS_Store
 .env*
+constants.js
 
 # debug
 npm-debug.log*
