@@ -46,8 +46,8 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
   await balloons.approve(dex.address, ethers.utils.parseEther("100"));
   // Init DEX on deploy:
   console.log("INIT exchange...");
-  await dex.init(ethers.utils.parseEther("5"), {
-    value: ethers.utils.parseEther("5"),
+  await dex.init(ethers.utils.parseEther("0.02"), {
+    value: ethers.utils.parseEther("0.02"),
     gasLimit: 200000,
   });
 };
