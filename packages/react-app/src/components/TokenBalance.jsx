@@ -35,6 +35,8 @@ export default function TokenBalance(props) {
         verticalAlign: "middle",
         fontSize: 24,
         padding: 8,
+        paddingBottom: 0,
+        paddingTop: 0,
         cursor: "pointer",
       }}
       onClick={() => {

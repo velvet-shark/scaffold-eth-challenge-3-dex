@@ -25,16 +25,16 @@ export default function Events({ contracts, contractName, eventName, localProvid
 
   return (
     <div style={{ width: 600, margin: "auto", marginTop: 32, paddingBottom: 32 }}>
-      <h2>
-        {eventName} Events
+      <h2 style={{ fontSize: 18 }}>
+        {eventName} events
         <br />
         {eventName === "EthToTokenSwap"
-          ? " ⟠ -->🎈 Address | Trade | AmountIn | AmountOut"
+          ? "Ξ $ETH → 🎈 $BAL | Address | Trade | AmountIn | AmountOut"
           : eventName === "TokenToEthSwap"
-          ? "🎈-->⟠ Address | Trade | AmountOut | AmountIn"
+          ? "🎈 $BAL → Ξ $ETH | Address | Trade | AmountOut | AmountIn"
           : eventName === "LiquidityProvided"
-          ? "➕ Address | Liquidity Minted | Eth In | Balloons In"
-          : "➖ Address | Liquidity Withdrawn | ETH out | Balloons Out "}
+          ? "➕ Address | Liquidity Minted | Ξ $ETH in | 🎈 $BAL in"
+          : "➖ Address | Liquidity Withdrawn | Ξ $ETH out | 🎈 $BAL out "}
       </h2>
       <List
         bordered
